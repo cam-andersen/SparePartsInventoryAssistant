@@ -7,4 +7,4 @@ This means that the improved codes in activity 22, at the bottom, blocks some of
 This is only to show that improvements for my previous code has been evaluated and improved.
 
 
-The flowchart is a screenshot.
+The flowchart is drawed in hand and is attached as a scan. It is named 'flow chart activity 11 and 22'
