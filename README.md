@@ -9,4 +9,4 @@ This is only to show that improvements for my previous code has been evaluated a
 
 The flowchart is drawed in hand and is attached as a scan. It is named 'flow chart activity 11 and 22'
 
-Kindly note: the program has been updated the 23rd of November. The updates contains comment-changes to improve my own understanding of the code. 
+Kindly note: the program has been updated the 23rd of November. The updates contains comment-changes to improve my own understanding of the code. As the program was created in the beginning of the course, the code is very simple and has not been updated in accordance to the coding learned later in the course.
