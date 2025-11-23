@@ -5,22 +5,21 @@ string part1 = "hydraulic pump";
 string part2 = "PLC module";
 string part3 = "servo motor";
 
-//Prints the beginning of the conversation that the assistant is doing:
+//Prints the conversation that the assistant is doing:
 Console.WriteLine("Hej. Welcome to the spare parts inventory!");
 
-// Defines the boolean variable that controls the loop (false = keep asking, true = stop)
+//Defines the boolean variable (false = keep asking, true = stop)
 bool done = false;
 
-//Creates a 'while' loop as the assistant should keep asking until the right condition is met - something is in stock
-//from the inventory.
+//Creates a while loop as the assistant should keep asking until the right condition is done meaning that something is in stock
+//from the inventory. 
 while (!done)
 {
     //The assistant asks what part we need and the user can write the part
     Console.Write("Which part do you need? ");
     string input = Console.ReadLine();
     
-//Codes the special queries
-    //Creates an 'if-else' to check if the user has written any parts that are defined in the inventory. Uses == to
+    //Creates if-else to check if the user has written any parts that are defined in the inventory. Uses == to
     //check if the entered is equal to the parts in the inventory.
     if (input == "Do you actually have any parts?" ||
         input == "Is there anything in stock at all?")
@@ -33,37 +32,33 @@ while (!done)
         Console.WriteLine(part3);
     }
     
-    //Creates an 'else if' to check if the entered text matches the first part.
+    //Creates else if for each of the parts to check if the entered text matches the parts. If the part is in the inventory
+    //the boolean variable defined earlier is inserted so the while loop stops
     else if (input == part1)
     {
-        //Prints confirmation message with the part name or prints a goodbye message to signal the program is ending
+        //Prints message with the part name or prints a goodbye message because the program is ending
         Console.WriteLine($"I've got {part1} here for you 😊");
         Console.WriteLine("Bye!");
-        //Sets the boolean variable 'done' to true so the while loop will stop
-        done = true; // exit the loop
+        done = true;
     }
-    //Creates another 'else if' to check if the entered text matches the second part
+    //Part 2
     else if (input == part2)
     {
-        //Prints confirmation message with the part name or prints a goodbye message to signal the program is ending
         Console.WriteLine($"I've got {part2} here for you 😊");
         Console.WriteLine("Bye!");
-        //Sets the boolean variable 'done' to true so the while loop will stop
         done = true;
     }
-    //Creates another 'else if' to check if the entered text matches the third part
+    //Part 3
     else if (input == part3)
     {
-        //Prints confirmation message with the part name or prints a goodbye message to signal the program is ending
         Console.WriteLine($"I've got {part3} here for you 😊");
         Console.WriteLine("Bye!");
-        //Sets the boolean variable 'done' to true so the while loop will stop
         done = true;
     }
-    //Creates an 'else' to when the entered text does not match any part
+    //Create else when the entered text does not match any part in the system
     else
     {
-        //Prints a message saying the part is not in the inventory
+        //Prints message
         Console.WriteLine($"I am afraid we don't have any {input} in the inventory 😔");
     }
 }
